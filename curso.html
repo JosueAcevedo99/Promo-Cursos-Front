@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Promo Cursos Xalapa</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/curso.css">
+
+
+    </head>
+
+    <body >
+
+
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top mb-3">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <i class="bi bi-shop"></i>
+                <span class = "fw-lighter ms-2" id="titulo">Promo Cursos Xalapa</span>
+            </a>
+
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon" id="btn-navbar"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-dark" href = "index.html">Home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-dark" href = "login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+
+    <!-- CURSO -->
+
+        <div class="d-flex justify-content-center mt-5 pt-5 bg-primary">
+            <h4 class="text-white mb-3 "> Curso </h4>
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <div id="portafolio" class="row">
+
+            </div>
+        </div>
+
+    <!-- end of CURSO -->
+
+
+    <!-- Modal Comentario -->
+    <div class="modal fade" id="exampleModalDetalles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="intro">
+                                    <h2 class="colorgreen text-center pt-5">Comparte tu opinion</h2>
+                                </div>
+                                <form class="p-lg-5 col-12 row g-3">
+                                    <div class="col-12">
+                                        <textarea name="" placeholder="comparte tu comentario" class="form-control" id="txtComentario"  rows="4" required></textarea>
+                                    </div>
+                                </form>
+                                <div class="col-12 text-center mb-3">
+                                    <button type="btn" class="btn btn-brand" onclick="comentar()">Enviar comentario</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- end of Modal Comentario -->
+
+
+    <!-- footer -->
+    <footer class = "bg-dark">
+        <div class = "container">
+
+
+            <div class = "row text-white align-items-center derechos">
+                <p class="col-sm-9 fs-4 px-5 derechos pt-3">Josué Acevedo. &copy; Todos Los Derechos Reservados 2022</p>
+
+                <div class = "col-sm-2 icons derechos" >
+                    <a class = "text-primary" href="https://github.com/JosueAcevedo99" target="_blank"><i class="bi bi-github"></i></a>
+                    <a class = "text-primary" href="https://mx.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a class = "text-primary" href="#"><i class="bi bi-arrow-up-circle-fill"></i></a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Custom -->
+    <script type="text/javascript" src="js/curso.js"></script>
+
+    </body>
+</html>

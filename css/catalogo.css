@@ -1,0 +1,81 @@
+:root{
+    --font:  sans-serif;
+    --color: #e4813f;
+    --dark: #092032;
+}
+
+body{
+    font-family: var(--font);
+}
+
+
+/* button */
+.bg-primary{
+    background-color: var(--color)!important;
+}
+
+
+/* titulo */
+
+#titulo{
+    color: var(--color)!important;
+}
+
+img{
+    border-radius: 25px;
+}
+
+/* Ajuste a todos los botones menos el de la barra de navegación */
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--color);
+    color: #fff;
+    border-color: var(--color);
+}
+
+
+.nav-link:hover{
+    color: var(--color)!important;
+}
+
+
+
+/* se cambia el text primary por defecto al color */
+.text-primary{
+    color: var(--color)!important;
+}
+
+
+
+/* footer */
+footer .brand{
+    font-family: var(--font);
+    letter-spacing: 2px;
+}
+
+footer a:hover{
+    color: var(--color)!important;
+}
+
+.icons{
+    font-size: x-large!important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.tabla{
+    margin-top: 5rem !important;
+}
+
+.productForm{
+    margin-top: 8rem !important;
+}

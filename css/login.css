@@ -1,0 +1,54 @@
+  :root{
+    --main-bg:#e4813f;
+  }
+  
+  .main-bg {
+    background: var(--main-bg) !important;
+  }
+  
+  input:focus, button:focus {
+    border: 1px solid var(--main-bg) !important;
+    box-shadow: none !important;
+  }
+  
+  .form-check-input:checked {
+    background-color: var(--main-bg) !important;
+    border-color: var(--main-bg) !important;
+  }
+  
+  .card{
+    border-radius: 25px !important;
+  }
+  
+  .btn{
+    border-radius: 25px !important;
+  }
+
+  .input{
+    border-radius: 25px !important;
+  }
+
+  .bgimg-registro{
+    border-radius: 25px !important;
+    background: url(images/login.jpg) center/cover no-repeat;
+  }
+  
+  .bgdiv{
+    border-radius: 25px !important;
+    background: url(images/login.jpg) center/cover no-repeat;
+  }
+
+  .btnnew{
+    background-color: rgb(110, 191, 141, 0.5) !important;
+  }
+
+  .btn:hover{
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  img{
+    display:block;
+    max-width:100%;
+  }

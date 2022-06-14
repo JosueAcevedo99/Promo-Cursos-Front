@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Promo Cursos Xalapa</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/panelAdmin.css">
+
+
+  </head>
+
+    <body class="bg-primary">
+
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top mb-3">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <i class="bi bi-shop"></i>
+                <span class = "fw-lighter ms-2" id="titulo">Promo Cursos Xalapa</span>
+            </a>
+
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon" id="btn-navbar"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-dark" href = "index.html">Home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-dark" href = "login.html">Login</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <button  id="btn" type="button" class="btn btn-outline-light" >Refrescar</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+
+    <!-- form agregar -->
+    <form class="productForm bg-secondary">
+        <div class="mx-auto  text-center w-75">
+            <h2 class=" font-weight-bold text-white py-2">Datos del producto</h2>
+        </div>
+        <div class="col-sm-3 bg-white mx-auto">
+            <label  class="bg-white py-2">El id es: </label>
+            <label id="txtId" class="bg-white py-2"> </label>
+        </div>
+        <div class="form-group row mx-auto">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <input type="text" class="form-control form-control-user my-2 py-2" id="txtTitle"
+                       placeholder="Título">
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control form-control-user my-2 py-2" id="txtDescription"
+                       placeholder="Descripción">
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control form-control-user my-2 py-2" id="txtLink"
+                       placeholder="Link">
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control form-control-user my-2 py-2" id="txtImagen"
+                       placeholder="url de la imagen">
+            </div>
+        </div>
+        <div class="mx-auto  text-center w-75">
+            <button  id="btnCrear" href="#" class="btn btn-primary btn-user btn-block my-2 py-2">Crear</button>
+            <button  id="btnUpdate" href="#" class="btn btn-primary btn-user btn-block my-2 py-2">Modificar</button>
+        </div>
+
+    </form>
+    <!-- form agregar  -->
+
+
+
+    <!-- Tabla -->
+    <div class="card shadow mb-4 tabla">
+            <div class="card-header py-3">
+                <h4 class="m-0 fs-5 font-weight-bold text-primary">Listado de Cursos</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="productos" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Descripción</th>
+                            <th>Link</th>
+                            <th>Imágen</th>
+                            <th>Delete</th>
+                            <th>Update</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    <!-- end of tabla -->
+
+
+    <!-- footer -->
+    <footer class = "bg-dark">
+        <div class = "container">
+
+            <div class = "container derechos" ></div>
+            <div class = "row text-white align-items-center derechos">
+                <p class="col-sm-9 fs-4 px-5 derechos pt-3">Josué Acevedo. &copy; Todos Los Derechos Reservados 2022</p>
+
+                <div class = "col-sm-2 icons derechos" >
+                    <a class = "text-primary" href="https://github.com/JosueAcevedo99" target="_blank"><i class="bi bi-github"></i></a>
+                    <a class = "text-primary" href="https://mx.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a class = "text-primary" href="#"><i class="bi bi-arrow-up-circle-fill"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end of footer -->
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Custom -->
+    <script type="text/javascript" src="js/panelAdmin.js"></script>
+
+    </body>
+</html>
