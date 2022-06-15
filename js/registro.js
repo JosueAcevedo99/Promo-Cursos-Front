@@ -1,7 +1,11 @@
 const btnCrear = document.getElementById('btn-crear');
 
 btnCrear.onclick = () => {
-  agregarUsuario();
+  if(document.getElementById('txtCorreo').value != "" && document.getElementById('txtPassword').value != "" && document.getElementById('txtUserName').value != ""){
+    agregarUsuario();
+  }else{
+    alert("Debes llenar todos los campos");
+  }
 }
 
 

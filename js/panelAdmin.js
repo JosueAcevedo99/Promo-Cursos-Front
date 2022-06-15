@@ -1,4 +1,14 @@
 const token = localStorage.getItem("token");
+const bntLogOut = document.getElementById('bntLogOut');
+
+if(token != null){
+  bntLogOut.style.display = "none";
+}else{
+  window.location.href = 'index.html' 
+}
+
+
+
 const btn = document.getElementById('btn');
 const btnUpdate = document.getElementById('btnUpdate');
 

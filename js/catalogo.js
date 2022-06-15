@@ -2,6 +2,25 @@ const token = localStorage.getItem("token");
 //console.log(token);
 const url = 'https://promo-cursos.herokuapp.com/api/publicaciones';
 
+const btnLog = document.getElementById('bntLog');
+
+const bntLogOut = document.getElementById('bntLogOut');
+
+if(token != null){
+  btnLog.style.display = "none";
+}else{
+  bntLogOut.style.display = "none";
+}
+
+
+bntLogOut.onclick = () => {
+  window.localStorage.removeItem('token');
+  window.localStorage.removeItem('username');
+}
+
+
+
+
 
 const cargarCatalogo = async () => {
 

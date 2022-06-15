@@ -1,7 +1,12 @@
 const btn = document.getElementById('btn-iniciar');
 
 btn.onclick = () => {
+  if(document.getElementById('txtUser').value != "" && document.getElementById('txtPassword').value != ""){
     verificarUsuario();
+  }else{
+    alert("Debes llenar todos los campos");
+  }
+    
 }
 
 const btnnew = document.getElementById('btnnew');

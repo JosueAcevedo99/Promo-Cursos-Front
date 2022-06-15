@@ -1,3 +1,30 @@
+const token = localStorage.getItem("token");
+//console.log(token);
+
+const btnLog = document.getElementById('bntLog');
+
+const bntLogOut = document.getElementById('bntLogOut');
+
+async function btnComent() {
+  if(token == null){
+    alert("Debes iniciar sesión para comentar");
+    btnLog.click();
+  }
+}
+
+if(token != null){
+  btnLog.style.display = "none";
+}else{
+  bntLogOut.style.display = "none";
+}
+
+
+bntLogOut.onclick = () => {
+  window.localStorage.removeItem('token');
+  window.localStorage.removeItem('username');
+}
+
+
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -9,8 +36,7 @@ function getParameterByName(name, url = window.location.href) {
 
 const id = getParameterByName('id');
 
-const token = localStorage.getItem("token");
-//console.log(token);
+
 const userName = localStorage.getItem("username");
 const baseUrl = 'https://promo-cursos.herokuapp.com/api/publicaciones/';
 const url = baseUrl + id;
@@ -38,7 +64,7 @@ const cargarCurso = async () => {
                     <h5 class="title mt-3">Curso: ${tittle}</h5>
                     <h5 class="title mt-3">Descripción: ${description}</h5>
                     <a class = "btn" href="${link}" target="_blank">Visitar</a>
-                    <button data-bs-toggle="modal" data-bs-target="#exampleModalDetalles" type="button" class="btn btn-outline-light" >Comentar</button>
+                    <button data-bs-toggle="modal" onclick="btnComent()" data-bs-target="#exampleModalDetalles" type="button" class="btn btn-outline-light" >Comentar</button>
               </div>`;
               for(let i = 0; i<comentarios.length; i++){
                 var comentario = comentarios[i].cuerpo;
